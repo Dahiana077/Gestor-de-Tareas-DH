@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+body{
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    font-family: 'popping', sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+.container{
+    width: 600px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 100vh;
+    background:linear-gradient(135deg, #35a4edba, #8b2bd0e2);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgb(0, 0, 0.2);
+}
+.container:hover{
+    transform: scale(1.02);
+    box-shadow: 0 12px 35px rgb(0, 0, 0.03);
+}
+h1{
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgb(100, 1000, 255, 0.3);
+}
+.todo-app {
+    width: 100%;
+    max-width: 480px;
+    background: linear-gradient(135deg, #2a66df, #822998);
+    margin: 100px auto 20px;
+    padding: 40px 30px 60px;
+    border-radius: 10px;
+}
+.todo-app h2{
+    color: #fff ;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.todo-app h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+.add-task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 25px;
+}
+input {
+    flex: 1;
+    width: 70%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    background: transparent;
+    padding: 12px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+input:focus{
+    border-color: #2575fc;
+    box-shadow: 0 0 8px rgb(37, 117, 252, 0.5);
+}
+button{
+    border: none;
+    padding: 12px 20px;
+    margin-left: 10px;
+    background: linear-gradient(135deg, #ff6a00, #ee0979);
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+button:hover{
+    background: linear-gradient(135deg, #ee0979, #ff6a00);
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgb(255, 105, 135, 0.5);
+}
+p{
+    margin-top: 15px;
+    color: #666;
+    font-style: italic;
+}
+ul li{
+    list-style: none;
+    font-size: 16px;
+    padding: 15px 8px 15px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    background: #fff;
+    margin-bottom: 4px;
+    border-radius: 4px;
+}
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-image: url(circulo.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 10px;
+}
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 4px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #ddd;
+}
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(chulito\ verde.png);
+}
+.message{
+    color: #fff;
+    text-align: center;
+
+}
